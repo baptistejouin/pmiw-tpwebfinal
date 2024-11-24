@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Mynerve&display=swap"
+      rel="stylesheet"
+    />
+    <title>El viaje de Chihiro</title>
+    <link rel="stylesheet" crossorigin href="/assets/index.css" />
+    <script src="/assets/libraries/p5.min.js"></script>
+    <script src="/assets/libraries/p5.sound.min.js"></script>
+    <script src="/assets/juego.js" defer></script>
+  </head>
+  <body class="relative">
+    <header class="my-12 text-xl relative">
+      <div class="px-6 max-w-screen-lg mx-auto">
+        <nav>
+          <ul class="flex gap-6">
+            <li><a href="#tematica" class="font-display">Tematicà</a></li>
+            <li><a href="#proceso" class="font-display">Proceso</a></li>
+            <li><a href="#videojuego" class="font-display">Videojuego</a></li>
+          </ul>
+        </nav>
+
+        <div class="mt-20 space-y-4">
+          <h1 class="text-6xl">千と千尋の神隠し</h1>
+          <p class="max-w-sm">
+            El viaje de Chihiro, una película de animación japonesa escrita y
+            dirigida por Hayao Miyazaki y producida por Studio Ghibli.
+          </p>
+          <button class="font-display border border-black px-4 py-2 rounded-xl">
+            El juego
+          </button>
+        </div>
+      </div>
+      <img
+        src="/assets/img/header.webp"
+        alt="chihiro"
+        class="absolute right-0 hidden xs:block xs:top-[350px] xs:w-[300px] sm:top-[200px] md:top-[150px] sm:w-[400px] md:w-[600px] lg:w-[870px] lg:top-[100px] animate-float"
+      />
+    </header>
+    <main class="px-6 flex flex-col gap-32 mt-64 max-w-screen-lg mx-auto">
+      <section class="flex flex-col gap-16">
+        <div class="scroll-mt-6" id="tematica">
+          <h2 class="text-4xl font-display mb-3">Tematica</h2>
+          <p>
+            La película se centra en Chihiro, una niña de diez años que, durante
+            un viaje en coche con sus padres, descubre un mundo mágico y
+            misterioso. En este aventura, Chihiro se enfrenta a una serie de
+            pruebas y desafíos que le permiten crecer y madurar. Te encuentras
+            al inicio de la historia, cuando Chihiro y sus padres están buscando
+            su nueva casa en el mundo real. De repente, el carro se descompone
+            en medio de un camino solitario. Para empeorar la situación,
+            animales salvajes comienzan a acechar en los alrededores.
+          </p>
+        </div>
+        <div class="scroll-mt-6" id="proceso">
+          <h2 class="text-4xl font-display mb-3">Proceso</h2>
+          <p>
+            Para este proyecto, me inspiré en la película de Miyazaki para crear
+            un videojuego interactivo. Por el videojuego, el jugador se
+            convierte en Chihiro y debe superar diferentes niveles. He
+            desarrollado este pequeño juego utilizando JavaScript orientado a
+            objetos y la biblioteca p5.js. Los recursos gráficos y de audio
+            fueron obtenidos de https://pixel-boy.itch.io/. Para este sitio web,
+            he utilizado el framework Tailwind CSS, que es un framework CSS
+            moderno que ofrece numerosas clases utilitarias. Dependiendo de las
+            clases que se utilizan, genera un archivo CSS que contiene
+            únicamente lo necesario para el sitio, evitando así la carga de
+            datos innecesarios y garantizando una velocidad de carga óptima
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="scroll-mt-6" id="videojuego">
+          <h2 class="text-4xl font-display mb-3 text-center">Videojuego</h2>
+          <div class="flex justify-center" id="canvasParent"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="px-6 pt-16 text-sm pb-8 max-w-screen-lg mx-auto text-center">
+      <p>
+        Designed and developed for the course "Programación para medios
+        interactivos orientada a las tecnologías web" at UNLP.
+      </p>
+      <div
+        class="flex justify-between pt-2 flex-col gap-2 sm:flex-row sm:gap-0"
+      >
+        <p>
+          Baptiste Jouin, student at
+          <a href="https://www.ingenieur-imac.fr/" class="underline">IMAC</a>
+          (Paris), on exchange at
+          <a href="https://unlp.edu.ar/" class="underline">UNLP</a> in
+          Argentina.
+        </p>
+        <p>
+          Project available on
+          <a href="https://github.com/baptistejouin" class="underline"
+            >GitHub</a
+          >
+          and hosted for free with
+          <a href="https://www.netlify.com/" class="underline">Netlify</a>.
+        </p>
+      </div>
+      <img
+        src="/assets/img/chihiro.png"
+        alt="chihiro"
+        class="absolute bottom-0 right-10 -z-10 h-80"
+      />
+      <img
+        src="/assets/img/totem.png"
+        alt="totem"
+        class="absolute bottom-0 left-10 -z-10 h-36"
+      />
+    </footer>
+  </body>
+</html>
